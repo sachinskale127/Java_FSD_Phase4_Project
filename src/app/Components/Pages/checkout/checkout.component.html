@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="content">
+        <app-title title="Order Register"></app-title>
+        <form [formGroup]="checkoutForm" (ngSubmit)="createOrder()">
+            <app-text-input [control]="fc['name']" label="Name"></app-text-input>
+            <app-text-input [control]="fc['address']" label="Address"></app-text-input>
+            <app-text-input [control]="fc['contact']" label="contact"></app-text-input>
+
+            <app-list [order]="order"></app-list>
+
+            <div class="buttons-container">
+                <div class="buttons">
+                    <button type="submit">
+                        Go To Payment
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

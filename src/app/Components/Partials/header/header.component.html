@@ -1,0 +1,20 @@
+<header>
+    <div class="container">
+        <a routerLink="/" class="logo">Kitchen Story</a>
+        <nav>
+            <ul>
+                <!--<li *ngIf="!isAuth">
+                    <a routerLink="/admin">Admin</a>
+                </li>
+                <li *ngIf="isAuth">
+                      <a (click)="logout()">Logout</a>
+                </li>-->
+                <li>
+                    <a routerLink="/cart">
+                        Cart <span *ngIf="cartQuantity">{{ cartQuantity }}</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
